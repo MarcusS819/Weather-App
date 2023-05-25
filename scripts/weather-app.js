@@ -30,8 +30,6 @@ async function checkWeather(city)
 
     var weatherData = await response.json();
 
-    console.log(weatherData);
-
     cityName = weatherData.name;
     temperature = weatherData.main.temp;
     humidity = weatherData.main.humidity;
